@@ -8,9 +8,8 @@ import org.springframework.stereotype.Repository;
 import com.gl.emp.model.Employee;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository<Employee, Long>{
-	
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+
 	List<Employee> findByfirstname(String firstname);
 
 }
-
